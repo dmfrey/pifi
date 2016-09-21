@@ -1,6 +1,10 @@
 # pifi
 PiFi Hotel Hotspot based on Raspberry Pi
 
+When complete, connect to:
+* SSID: pifi
+* Password: set in `etc/hostapd/hostapd.conf`, modify before setting up
+
 ## Hardware
 For this project the following hardware is required:
 
