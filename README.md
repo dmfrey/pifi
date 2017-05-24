@@ -1,6 +1,10 @@
 # pifi
 PiFi Hotel Hotspot based on Raspberry Pi
 
+When complete, connect to:
+* SSID: pifi
+* Password: set in `etc/hostapd/hostapd.conf`, modify before setting up
+
 ## Hardware
 For this project the following hardware is required:
 
@@ -10,6 +14,8 @@ For this project the following hardware is required:
 4. HDMI Cable
 5. Micro USB for power
 6. SD Card for Operation System
+
+Here is an Amazon Wishlist with all all the hardware you would require: https://amzn.com/w/CWSDWEDT9PY0
 
 ## Operating System
 Install the latest Raspbian Jessie, available from https://www.raspberrypi.org/downloads/raspbian/.
