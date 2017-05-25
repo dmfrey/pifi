@@ -50,6 +50,8 @@ OpenVPN in the current setup is configured to connect to a ProXPN premium accoun
 
 The iptables rules in `etc/iptables.ipv4.nat` are configured to send all traffic through `tun0`, the virtual connection created when OpenVPN is connected. If OpenVPN is not configured, edit `etc/iptables.ipv4.nat` and change `tun0` to `eth0` or `wlan1`, depending on whichever interface is connected to the internet.
 
+There are now iptables rules for passing all traffic through `tun0`, `eth0` or `wlan1`. Simply modify `etc/rc.local` and comment out the default `iptables-restore` rule and uncomment the appropriate one. The default is pass all traffic through `tun0`.
+
 ## Notes
 
 ### Connection to the Hotel

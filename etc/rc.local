@@ -18,5 +18,7 @@ if [ "$_IP" ]; then
 fi
 
 iptables-restore < /etc/iptables.ipv4.nat
+#iptables-restore < /etc/iptables.ipv4.nat.eth0
+#iptables-restore < /etc/iptables.ipv4.nat.wlan1
 
 exit 0
