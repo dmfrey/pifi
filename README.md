@@ -40,6 +40,11 @@ $ sudo update-rc.d hostapd enable
 $ sudo update-rc.d dnsmasq enable
 ```
 
+You will need to edit `/etc/sysctl.conf` and change the `net.ipv4.ip_forward` line to:
+```
+net.ipv4.ip_forward=1
+```
+
 Optional, setup OpenVPN
 
 ```
