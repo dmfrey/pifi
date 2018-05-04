@@ -1,0 +1,15 @@
+[Unit]
+Description=Listen for Shutdown
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 -u listen-for-shutdown.py
+WorkingDirectory=/usr/local/bin
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
+

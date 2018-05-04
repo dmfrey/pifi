@@ -14,6 +14,7 @@ For this project the following hardware is required:
 4. HDMI Cable
 5. Micro USB for power
 6. SD Card for Operation System
+7. Power button (optional)
 
 Here is an Amazon Wishlist with all all the hardware you would require: https://amzn.com/w/CWSDWEDT9PY0
 
@@ -58,6 +59,16 @@ There are now iptables rules for passing all traffic through `tun0`, `eth0` or `
 1. When in a hotel, connect the Raspberry Pi to the TV.
 2. Open the default browser and click through the hotel's paywall for WiFi.
 3. (Optional) If OpenVPN is configured, the service will have to be restarted after a connection has been made `$ sudo service openvpn restart`
+
+
+### Add a phyical power button
+
+Do you feel like trying to add a physical power button to turn the pifi on and off. There are scripts now in the repository.  There is a script that will listen for shutdown on the GPIO pins 5 and 6. Also included is a systemd startup script to listen to the short on the GPIO. When enabled, it will start listening at startup, cleanly shutdown and restart if it should crash.
+
+I'll leave it up to you for how to solder in the power button.
+
+Check out [this article](https://howchoo.com/g/mwnlytk3zmm/how-to-add-a-power-button-to-your-raspberry-pi) for some help.
+
 
 ### Further Enhancements
 1. VNC Server - this is to configure the Hotel's paywall without having to connect the Raspberry Pi to the TV first, just open a VNC Connection from a laptop and configure the Hotel's wifi.
